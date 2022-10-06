@@ -71,4 +71,4 @@ app.layout = html.Div([dcc.Location(id="url"),
                        content])
 
 if __name__ == "__main__":
-    app.run_server(port=8020)
+    app.run_server(debug=False, host='0.0.0.0', port=8080)
