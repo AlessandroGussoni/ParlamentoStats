@@ -1,0 +1,92 @@
+config = {'assets': {'logo_senato': 'assets/logo_senato.jpg',
+                     'logo_eligendo': 'assets/logo_eligendo.jpg'},
+
+          'page_template': {'Chart width': 9,
+                            'dd_style': {"width": "95%"},
+                            'chart_style': {"height": "100%", "width": "100%"},
+                            'title': {'text': ' nel corso delle legislature',
+                                      'y': 0.952,
+                                      'x': 0.5,
+                                      'xanchor': 'center',
+                                      'yanchor': 'top',
+                                      },
+                            'chart': {'m': 10}
+                            },
+          'gov': {'h2_title': "Lagislature e partiti",
+                  'chart_id': 'gov_chart',
+                  'button_name': 'Scarica excel',
+                  'download_id': ['gov_btn_xlsx', 'gov_download_xlsx'],
+                  'tabs': {'Key facts': ['In media un governo è durato un anno e 4 mesi'],
+                           'Come è calcolato': [
+                               'I dati provengono dal sito del Senato',
+                               "I governi nati durante una legislatura vengono conteggiati all'inizio della stessa",
+                               'Nel calcolo dei governi per legislatura rientrano i governi tecnici']}},
+          'sen': {'h2_title': "Lagislature e partiti",
+                  'dd_id': 'sen_stat_dropdown',
+                  'chart_id': 'sen_chart',
+                  'button_name': 'Scarica excel',
+                  'download_id': ['sen_btn_xlsx', 'sen_download_xlsx'],
+                  'tabs': {
+                      'Key facts': ['Escludendo il 1948 in media un Senatore è rimasto in carica per 1.82 legislature',
+                                    'Cesare Mezagora è stato il Senatore in carica per più legislature (11) nella storia della Repubblica',
+                                    'Escludendo il 1948, il 52.57% dei Senatori nella Storia della Repubblica erano alla prima legislatura'],
+                      'Come è calcolato': ['I dati provengono dal sito del Senato',
+                                           ]}},
+
+          'eta': {'h2_title': "Fasce d'età nel corso degli anni",
+                  'dd_id': 'eta_stat_dropdown',
+                  'chart_id': 'eta_chart',
+                  'button_name': 'Scarica excel',
+                  'download_id': ['eta_btn_xlsx', 'eta_download_xlsx'],
+                  'tabs': {'Key facts': [
+                      "La legislatura con la più alta percentuale di Senatori tra i 40 e i 49 anni è stata quella del 1968",
+                      "La legislatura con la più alta percentuale di Senatori tra i 50 e i 59 anni è stata quella del 1979",
+                      "La legislatura con la più alta percentuale di Senatori tra i 60 e i 69 anni è stata quella del 1953",
+                      "La legislatura con la più alta percentuale di Senatori oltre i 70 anni è stata quella del 1948"],
+                      'Come è calcolato': [
+                          'I dati provengono dal sito del Senato',
+                      ]}},
+
+          'eta_gruppo': {'h2_title': "Distribuzione del'età dei senatori per partito",
+                         'dd_id': 'eta_gruppo_stat_dropdown',
+                         'dd2_id': 'partito_stat_dropdown',
+                         'chart_id': 'eta_gruppo_chart',
+                         'button_name': 'Scarica excel',
+                         'download_id': ['eta_gruppo_btn_xlsx', 'eta_gruppo_download_xlsx'],
+                         'tabs': {'Key facts': [
+                             "Il gruppo parlamentare con l'età media più bassa nella storia della Repubblica (46 anni e 8 mesi) è il Movimento 5 Stelle nel 2013",
+                         ],
+                             'Come è calcolato': [
+                                 'I dati provengono dal sito del Senato']}},
+          'prof': {'h2_title': 'Statistiche sulle professioni dei senatori',
+                   'dd_id': 'prof_stat_dropdown',
+                   'chart_id': 'prof_chart',
+                   'button_name': 'Scarica excel',
+                   'download_id': ['prof_btn_xlsx', 'prof_download_xlsx'],
+                   'tabs': {'Key facts': [
+                       "Durante la legislatura del 1948 il 35% dei Senatori ha indicato 'Avvocato' come professione. Da allora rimane la professione più indicata nella storia del Senato"],
+                       'Come è calcolato': [
+                           'Le professioni indicate dai senatori sono aggregate per anno e sommate',
+                           'Ogni Senatore può indicare più professioni a inizio legislatura']}},
+          'study': {'h2_title': 'Statistiche sul titolo di studio dei senatori',
+                    'dd_id': 'study_stat_dropdown',
+                    'chart_id': 'study_chart',
+                    'button_name': 'Scarica excel',
+                    'download_id': ['study_btn_xlsx', 'study_download_xlsx'],
+                    'tabs': {'Key facts': ['I dati provengono dal sito del Senato',
+                                           "L'archivio storico inizia a pubblicare la statistica dal 2008"],
+                             'Come è calcolato': [
+                                 'I titoli di studio indicati dai Senatori sono aggregati per anno e sommati']}},
+          'aff': {'h2_title': 'Affluenza regionale per anno',
+                  'dd_id': 'aff_stat_dropdown',
+                  'chart_id': 'aff_chart',
+                  'button_name': 'Scarica excel',
+                  'download_id': ['aff_btn_xlsx', 'aff_download_xlsx'],
+                  'tabs': {'Key facts': ["La regione con l'affluenza più bassa nella storia è stata la Calabria nel 2018 (62.81%)",
+                                         "La regione con l'affluenza più alta nella storia è stata l'Emilia Romagna nel 1976 (97.4%)"],
+                           'Come è calcolato': [
+                               "I dati provengono dal sito 'Eligendo'"
+                               "L'affluenza è calcolata su base regionale",
+                               "Durante le elezioni di seconda, terza e quarta Legislatura i risultati elettorali di Abruzzi e Molise vengono accorpati. Per questi anni ELettori e Votanti sono stati equamente divisi tra le 2 regioni",
+                           ]}}
+          }
