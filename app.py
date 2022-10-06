@@ -12,6 +12,8 @@ files = [file for file in os.listdir('data') if os.path.isfile(os.path.join('dat
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP],
                 suppress_callback_exceptions=True, )
 
+server = app.server
+
 # TODO: riempire il testo delle pagine
 # TODO: sistemare download button
 # TODO: aggiungere home page
