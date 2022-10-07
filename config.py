@@ -1,5 +1,5 @@
-config = {'assets': {'logo_senato': 'assets/logo_senato.jpg',
-                     'logo_eligendo': 'assets/logo_eligendo.jpg'},
+config = {'assets': {'logo_senato': 'assets/logo_senato.JPG',
+                     'logo_eligendo': 'assets/logo_eligendo.JPG'},
 
           'page_template': {'Chart width': 9,
                             'dd_style': {"width": "95%"},
