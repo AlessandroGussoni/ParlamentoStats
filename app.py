@@ -10,6 +10,7 @@ from index import matches
 files = [file for file in os.listdir('data') if os.path.isfile(os.path.join('data', file))]
 
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP],
+                title="ParlamentoStats",
                 suppress_callback_exceptions=True, )
 
 server = app.server
@@ -42,7 +43,8 @@ sidebar = html.Div(
         html.Hr(),
         html.P("Elenco delle statistiche disponibili", className="lead"),
         dbc.Nav([dbc.NavLink("Home", href="/", active="exact")] +
-                [dbc.NavLink(file.split('.')[0], href="/" + file.split('.')[0], external_link=True, active='exact') for file in
+                [dbc.NavLink(file.split('.')[0], href="/" + file.split('.')[0], external_link=True, active='exact') for
+                 file in
                  files] + [dbc.NavLink("Affluenza", href="/Affluenza", active="exact")],
 
                 vertical=True,
